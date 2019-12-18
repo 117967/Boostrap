@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+		<link rel="stylesheet" href="assets/bootstrap/css/bootstrap.min.css">
+		<link rel="stylesheet" href="css/home.css">
+		<link rel="stylesheet" href="css/navbar.css">
+		<title>My News Site</title>
+	</head>
+	<body>
+		<!-- Navbar -->
+		<nav id="navbar-top" class="navbar fixed-top navbar-expand-lg navbar-light bg-light">
+			<div class="container">
+				<a class="navbar-brand" href="/">My News Site</a>
+				<button class="navbar-toggler" data-toggle="collapse" data-target="#nav-dropdown">
+					<span class="navbar-toggler-icon"></span>
+				</button>
+				<div class="collapse navbar-collapse" id="nav-dropdown">
+					<ul class="navbar-nav ml-auto">
+						<li class="nav-item active">
+							<a class="nav-link" href="/">Home</a>
+						</li>
+						<li class="nav-item dropdown">
+							<a class="nav-link dropdown-toggle" id="navbarDropdown" href="javascript:void(0)"
+								role="button" data-toggle="dropdown">
+								Categories
+							</a>
+							<div class="dropdown-menu">
+								<a class="dropdown-item" href="#sport">Sport</a>
+								<a class="dropdown-item" href="#buisness">Buisness</a>
+								<a class="dropdown-item" href="#technology">Technology</a>
+								<a class="dropdown-item" href="#health">Health</a>
+							</div>
+						</li>
+						<li>
+							<form class="search-form form-inline my-2 my-lg-0">
+								<input class="form-control mr-sm-2 search-input" type="search" placeholder="Search"
+									aria-label="Search">
+								<div class="btn-group">
+									<button type="button" type="submit"
+										class="btn btn-outline-success my-2 my-sm-0 btn-search">Search</button>
+									<button type="button"
+										class="btn btn-outline-success dropdown-toggle dropdown-toggle-split"
+										data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+									</button>
+									<div class="dropdown-menu">
+										<a class="btn-advanced-search dropdown-item" href="#">Advanced Search</a>
+									</div>
+								</div>
+							</form>
+						</li>
+					</ul>
+				</div>
+			</div>
+		</nav>
+		<div id="navbar-spacer"></div>
+		<!-- End Navbar -->
+
+		<section id="article" class="container">
+			<div class="jumbotron">
+				<img src="" class="img-fluid">
+				<h1 class="article-title title display-4"></h1>
+				<h4 class="description"></h4>
+				<p class="content"></p>
+				<a href="" class="btn btn-primary btn-to-site">Go to the site</a>
+			</div>
+		</section>
+
+		<!-- Asset Scripts-->
+		<script src="assets/jquery/jquery.min.js"></script>
+		<script src="assets/popper/popper.min.js"></script>
+		<script src="assets/bootstrap/js/bootstrap.min.js"></script>
+		<!-- End Asset Scripts-->
+
+		<script src="js/template-engine.js"></script>
+		<script src="js/index.js"></script>
+		<script src="js/navbar.js"></script>
+		<script src="js/article.js"></script>
+	</body>
+</html>

@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+		<link rel="stylesheet" href="/assets/bootstrap/css/bootstrap.min.css">
+		<link rel="stylesheet" href="/css/navbar.css">
+		<link rel="stylesheet" href="/css/search.css">
+		<title>My News Site</title>
+	</head>
+	<body>
+
+		<!-- Navbar -->
+		<nav id="navbar-top" class="navbar fixed-top navbar-expand-lg navbar-light bg-light">
+			<div class="container">
+				<a class="navbar-brand" href="/">My News Site</a>
+				<button class="navbar-toggler" data-toggle="collapse" data-target="#nav-dropdown">
+					<span class="navbar-toggler-icon"></span>
+				</button>
+				<div class="collapse navbar-collapse" id="nav-dropdown">
+					<ul class="navbar-nav ml-auto">
+						<li class="nav-item active">
+							<a class="nav-link" href="/">Home</a>
+						</li>
+						<li class="nav-item dropdown">
+							<a class="nav-link dropdown-toggle" id="navbarDropdown" href="javascript:void(0)"
+								role="button" data-toggle="dropdown">
+								Categories
+							</a>
+							<div class="dropdown-menu">
+								<a class="dropdown-item" href="#sport">Sport</a>
+								<a class="dropdown-item" href="#buisness">Buisness</a>
+								<a class="dropdown-item" href="#technology">Technology</a>
+								<a class="dropdown-item" href="#health">Health</a>
+							</div>
+						</li>
+					</ul>
+				</div>
+			</div>
+		</nav>
+		<div id="navbar-spacer"></div>
+		<!-- End Navbar -->
+
+		<div class="container">
+			<div class="jumbotron">
+				<h1 class="title display-4">Search</h1>
+				<form id="search-form">
+					<div class="input-group mb-3">
+						<input id="search-query" type="search" class="form-control" placeholder="Search news..."
+							aria-label="Search news..." aria-describedby="basic-addon2">
+						<div class="input-group-append">
+							<button class="btn btn-outline-secondary" type="submit">Search</button>
+						</div>
+					</div>
+					<div class="collapse" id="advanced-search-collapse">
+						<div class="form-row">
+							<div class="col-md-8 col-sm-12">
+								<div class="input-group mb-3">
+									<div class="input-group-prepend">
+										<span class="input-group-text">Date Range</span>
+									</div>
+									<input type="date" placeholder="from" class="form-control date-from">
+									<input type="date" placeholder="to" class="form-control date-to">
+								</div>
+							</div>
+							<div class="col">
+								<div class="input-group mb-3">
+									<div class="input-group-prepend">
+										<label class="input-group-text" for="country-select">Country</label>
+									</div>
+									<select class="custom-select" id="country-select">
+										<option selected value="">Choose...</option>
+										<option value="ar">ar</option>
+										<option value="de">de</option>
+										<option value="en">en</option>
+										<option value="es">es</option>
+										<option value="fr">fr</option>
+										<option value="he">he</option>
+										<option value="it">it</option>
+										<option value="nl">nl</option>
+										<option value="no">no</option>
+										<option value="pt">pt</option>
+										<option value="ru">ru</option>
+										<option value="se">se</option>
+										<option value="ud">ud</option>
+										<option value="zh">zh</option>
+									</select>
+								</div>
+							</div>
+						</div>
+						<div class="form-row">
+							<div class="col-md-6 col-sm-12">
+								<div class="input-group mb-3">
+									<div class="input-group-prepend">
+										<span class="input-group-text">Articles</span>
+									</div>
+									<input id="articles-count-input" value="50" type="number" min="10" max="100"
+										step="10" placeholder="from" class="form-control">
+								</div>
+							</div>
+							<div class="col">
+								<div class="input-group mb-3">
+									<div class="input-group-prepend">
+										<label class="input-group-text" for="country-select">Sort by</label>
+									</div>
+									<select class="custom-select" id="sort-by-select">
+										<option selected value="publishedAt">publishedAt</option>
+										<option value="relevancy">relevancy</option>
+										<option value="popularity">popularity</option>
+										<option value="publishedAt">publishedAt</option>
+										<option value="relevancy">relevancy</option>
+									</select>
+								</div>
+							</div>
+						</div>
+					</div>
+				</form>
+
+				<a class="btn btn-light btn-collapse" data-toggle="collapse" href="#advanced-search-collapse"
+					role="button" aria-expanded="false" aria-controls="advanced-search-collapse">
+					Toggle advanced search
+				</a>
+				<p id="found-count"></p>
+			</div>
+			<div class="search-cards row">
+
+			</div>
+		</div>
+
+
+		<!-- Asset Scripts-->
+		<script src="/assets/jquery/jquery.min.js"></script>
+		<script src="/assets/popper/popper.min.js"></script>
+		<script src="/assets/bootstrap/js/bootstrap.min.js"></script>
+		<!-- End Asset Scripts-->
+
+		<script src="/js/template-engine.js"></script>
+		<script src="/js/index.js"></script>
+		<script src="/js/navbar.js"></script>
+		<script src="/js/search.js"></script>
+	</body>
+</html>

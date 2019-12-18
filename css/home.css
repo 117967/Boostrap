@@ -1,0 +1,18 @@
+#welcome-carousel .jumbotron {
+	margin-bottom: 0px;
+	height: calc(100vh - 51px);
+}
+
+.carousel-control-next:active,
+.carousel-control-prev:active,
+.carousel-control-next:focus,
+.carousel-control-prev:focus {
+	background: black;
+	opacity: 0 !important;
+}
+
+.carousel-control-next:hover,
+.carousel-control-prev:hover {
+	background: black !important;
+	opacity: 0.5!important;
+}

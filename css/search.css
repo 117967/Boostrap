@@ -1,0 +1,21 @@
+.btn-collapse {
+	margin: 15px 2rem;
+	position: absolute;
+	right: 0;
+	bottom: 0;
+}
+
+#found-count {
+	margin: 15px 2rem;
+	position: absolute;
+	left: 0;
+	bottom: 0;
+}
+
+.jumbotron {
+    position: relative;
+}
+
+#search-form {
+    padding-bottom: 20px;
+}
